@@ -1,0 +1,35 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="end">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:context="com.example.naghmeh.extendedmemorygame.RulesFragment">
+        <!-- TODO: Update blank fragment layout -->
+
+        <Button
+            android:id="@+id/dismiss"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:text="X"
+            android:onClick="dismiss" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rules"
+            android:id="@+id/theRules"
+            android:textSize="20dp"
+            android:scrollbars="vertical"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+</ScrollView>
+
