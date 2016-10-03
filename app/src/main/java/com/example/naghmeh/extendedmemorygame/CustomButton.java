@@ -46,9 +46,9 @@ public class CustomButton extends Button
         setLayoutParams(tempParams);
     }
 
-    public void setParams()
+    public void setParams(int r, int c)
     {
-        tempParams = new GridLayout.LayoutParams(GridLayout.spec(row), GridLayout.spec(column));
+        tempParams = new GridLayout.LayoutParams(GridLayout.spec(r), GridLayout.spec(c));
         tempParams.width = (int) getResources().getDisplayMetrics().density * 105;
         tempParams.height = (int) getResources().getDisplayMetrics().density * 105;
         setLayoutParams(tempParams);
@@ -86,6 +86,14 @@ public class CustomButton extends Button
 
     public void setRow(int row) {
         this.row = row;
+    }
+
+    public int getRow() {
+        return row;
+    }
+
+    public int getColumn() {
+        return column;
     }
 
     public void setColumn(int column) {

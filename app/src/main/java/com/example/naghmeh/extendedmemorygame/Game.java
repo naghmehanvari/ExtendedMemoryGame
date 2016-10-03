@@ -211,12 +211,12 @@ public class Game extends AppCompatActivity{
         for(int i = 0; i < listOfButtons.length; i++) {
             if(listOfButtons[i].isMatched() == false) {
                 Log.i("isnotMatched",i +" ");
-                notMatched.add(listOfButtons[index]);
+                notMatched.add(listOfButtons[i]);
             }
             else {
-                matched.add(listOfButtons[index]);
+                matched.add(listOfButtons[i]);
             }
-            index++;
+
         }
 
         int r = 0, c = 0;
@@ -230,8 +230,9 @@ public class Game extends AppCompatActivity{
 
             notMatched.get(i).setRow(r);
             notMatched.get(i).setColumn(c);
-            notMatched.get(i).setParams();
-
+            //Log.i("aaa", i+"");
+            notMatched.get(i).setParams(r,c);
+            Log.i("aaa",notMatched.get(i).getRow()+"");
 
 
             c++;
